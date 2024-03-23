@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F6CA95D-C6C8-9538-F714-31DAC706398D}|Assembly-CSharp.csproj|m:\\year 3 again\\cmp 304 ai\\dinojumpaiunity\\dinojumpai\\assets\\scripts\\ground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F6CA95D-C6C8-9538-F714-31DAC706398D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F6CA95D-C6C8-9538-F714-31DAC706398D}|Assembly-CSharp.csproj|m:\\year 3 again\\cmp 304 ai\\dinojumpaiunity\\dinojumpai\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F6CA95D-C6C8-9538-F714-31DAC706398D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F6CA95D-C6C8-9538-F714-31DAC706398D}|Assembly-CSharp.csproj|M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F6CA95D-C6C8-9538-F714-31DAC706398D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ground.cs",
+              "DocumentMoniker": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\Assets\\Scripts\\Ground.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Ground.cs",
+              "ToolTip": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\Assets\\Scripts\\Ground.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Ground.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T17:34:32.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wDEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T17:25:30.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "M:\\Year 3 again\\CMP 304 AI\\DinoJumpAIUnity\\DinoJumpAI\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwDAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T17:01:50.046Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
