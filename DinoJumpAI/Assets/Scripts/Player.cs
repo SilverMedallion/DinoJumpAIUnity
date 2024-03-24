@@ -56,4 +56,12 @@ public class Player : MonoBehaviour
         //actually move the character based on direction
         character.Move(direction * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            GameManager.Instance.GameOver();
+        }
+    }
 }
