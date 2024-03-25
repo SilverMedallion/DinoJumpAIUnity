@@ -25,4 +25,11 @@ public class Obstacle : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnDestroy()
+    {
+        //remove this obstacle from the game manger list when destroyed
+        GameManager.Instance.obstacles.Remove(gameObject);
+    }
+
 }

@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
    //anyone can access this instacnce but only this class can manage the private instance
    public static GameManager Instance {  get; private set; }
 
+    //store a list of all spawned objects
+    public List<GameObject> obstacles = new List<GameObject>(); 
+
     //starting game speed
     public float initialGameSpeed = 5f;
     //current game speed
@@ -29,6 +32,9 @@ public class GameManager : MonoBehaviour
 
     //the score which will increase by time
     private float score;
+
+    
+
 
   
 

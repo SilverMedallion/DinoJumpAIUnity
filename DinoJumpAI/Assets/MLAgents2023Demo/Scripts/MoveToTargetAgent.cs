@@ -36,6 +36,7 @@ public class MoveToTargetAgent : Agent
     //function is used to tell the agent what it can see. essentially giving it values and what these values do 
 
     //note that it needs 4 vector observations. 2 for the agents x and y. 2 for the targets x and y 
+   
     public override void CollectObservations(VectorSensor sensor)
     {
         //give the agent it's own position

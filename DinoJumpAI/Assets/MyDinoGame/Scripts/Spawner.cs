@@ -45,6 +45,8 @@ public class Spawner : MonoBehaviour
                 GameObject obstacle = Instantiate(obj.prefab);
                 //want it to be += because if we spawn the bird if we want it to be up in the air if we change the prefabs positition it will spawn it based on the prefabs position. so the bird at 0.5 Y for example
                 obstacle.transform.position += transform.position;
+                //add to list of spawned obstacles
+                GameManager.Instance.obstacles.Add(obstacle); ;
                 //once spawned break out the loop
                 break;
                 
