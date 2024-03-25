@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1711312232",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Uni Modules\\Year 3 again\\CMP304 AI\\DinoJumpAIUnity\\DinoJumpAI\\venv\\Scripts\\mlagents-learn --run-id=Test1",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.2.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1711312272"
+    },
+    "total": 40.4932935,
+    "count": 1,
+    "self": 0.010733399999999449,
+    "children": {
+        "run_training.setup": {
+            "total": 0.15115419999999968,
+            "count": 1,
+            "self": 0.15115419999999968
+        },
+        "TrainerController.start_learning": {
+            "total": 40.3314059,
+            "count": 1,
+            "self": 0.00045430000000834525,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 40.330940399999996,
+                    "count": 1,
+                    "self": 40.330940399999996
+                },
+                "trainer_threads": {
+                    "total": 8.99999996306633e-07,
+                    "count": 1,
+                    "self": 8.99999996306633e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 1.0299999999574538e-05,
+                    "count": 1,
+                    "self": 1.0299999999574538e-05
+                }
+            }
+        }
+    }
+}
