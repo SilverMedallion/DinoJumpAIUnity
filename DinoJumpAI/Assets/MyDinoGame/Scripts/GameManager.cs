@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public float gameSpeedIncrease = 0.1f;
 
     //references just so we can deactivate them
-    private Player player;    //this is a reference to the player script that is attached to the dinoAi
+    private DinoRunnerAgent dino;    //this is a reference to the agent script that is attached to the dinoAi
     private Spawner spawner;
 
     //get reference to UI components 
@@ -32,11 +32,6 @@ public class GameManager : MonoBehaviour
 
     //the score which will increase by time
     private float score;
-
-    
-
-
-  
 
     private void Awake()
     {
@@ -60,58 +55,49 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<Player>();
+        //assign references 
+        dino = FindObjectOfType<DinoRunnerAgent>();
         spawner = FindObjectOfType<Spawner>();
 
-
-        NewGame();
+        //call new game as soon as we run 
+        //no longer need this as dino calls this in on episode begin 
+       // NewGame();
     }
 
     public void NewGame()
     {
-        //clean up all obstacle in the scene
-        Obstacle[] obstacles = FindObjectsOfType <Obstacle> ();
-
+        //just doing this becuase it was in game over before we removed that 
+        enabled= false;
+        
+        //destory any obstacles left over 
         foreach(var obstacle in obstacles)
         {
             //if we did not have .gameobject it would just destory the script not the game object
             Destroy(obstacle.gameObject);
         }
+        
 
+        //rest the game speed
         gameSpeed = initialGameSpeed;
         //set score back to 0
         score = 0f;
-        //endable game manger
+        //enable the game manager
         enabled = true;
-
        //get palyer and spawner active for new game
-        player.gameObject.SetActive(true);
+        dino.gameObject.SetActive(true);
         spawner.gameObject.SetActive(true);
 
-        //turn game over ui off on new game
-        gameOverText.gameObject.SetActive(false);
+        //set game over ui to false, it should never appear 
+        gameOverText.gameObject.SetActive(false); 
         retryButton.gameObject.SetActive(false);
-
+        
         UpdateHighScore();
+
+        
     }
 
-    public void GameOver()
-    {
-        //reset game speed
-        gameSpeed = 0;
-        //disable game manager
-        enabled= false;
 
-        //disable the Player/Ai and spawner
-        player.gameObject.SetActive(false);
-        spawner.gameObject.SetActive(false);
-
-        //enable game over ui 
-        gameOverText.gameObject.SetActive(true);
-        retryButton.gameObject.SetActive(true);
-
-        UpdateHighScore();
-    }
+    
 
     private void Update()
     {

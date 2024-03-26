@@ -61,7 +61,8 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            GameManager.Instance.GameOver();
+            //comented out as game manger was changed for ai 
+           // GameManager.Instance.GameOver();
         }
     }
 }
