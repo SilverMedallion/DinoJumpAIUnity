@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;  //need for UI
 using UnityEngine.UI;
+using System.IO.Enumeration;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,6 +35,14 @@ public class GameManager : MonoBehaviour
     //the score which will increase by time
     private float score;
 
+    //stuff for collection data
+    //string to store filename
+    string filename = "";
+    //create list to store average scores
+    public List<float> results;
+
+    
+ 
     private void Awake()
     {
         if(Instance == null)
@@ -43,6 +53,8 @@ public class GameManager : MonoBehaviour
             //if for whatever reason a second instacne is created immediatlry destroy
             DestroyImmediate(gameObject);
         }
+
+
     }
 
     private void OnDestroy()
@@ -61,7 +73,10 @@ public class GameManager : MonoBehaviour
 
         //call new game as soon as we run 
         //no longer need this as dino calls this in on episode begin 
-       // NewGame();
+        // NewGame();
+        //store file in correct location
+        filename = Application.dataPath + "/test.csv";
+
     }
 
     public void NewGame()
@@ -80,6 +95,7 @@ public class GameManager : MonoBehaviour
         //rest the game speed
         gameSpeed = initialGameSpeed;
         //set score back to 0
+        UpdateHighScore();
         score = 0f;
         //enable the game manager
         enabled = true;
@@ -91,7 +107,6 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(false); 
         retryButton.gameObject.SetActive(false);
         
-        UpdateHighScore();
 
         
     }
@@ -114,6 +129,10 @@ public class GameManager : MonoBehaviour
 
     private void UpdateHighScore()
     {
+
+        //update average scores list:
+        results.Add(score);
+
         //palyer prefs will store data between game session
         //get the score 
         float highScore = PlayerPrefs.GetFloat("highScore", 0);  //the second parameter is the deafult if there is no score saved
@@ -127,6 +146,23 @@ public class GameManager : MonoBehaviour
         }
 
         hightScoreText.text = Mathf.FloorToInt(highScore).ToString("D5");
+
+       
+    }
+
+    private void OnApplicationQuit()
+    {
+        //create a new text writer to write to the test file, overwrite the previous one
+        TextWriter textWriter = new StreamWriter(filename, false);
+
+        //loop for all socres recorded
+        for (int i = 0; i < results.Count;++i)
+        {
+            textWriter.WriteLine(i / 100 + "," + results[i]);
+        }
+
+
+        textWriter.Close();
     }
 
 }

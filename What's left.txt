@@ -1,0 +1,12 @@
+Add in output code to game 
+
+test for 4 different reward factors
+
+make sure it works with 2 first just to make sure 
+change the yaml file to work with 500000 test
+
+write the presentation 
+
+record the video of it working 
+
+make a runable exe of the ai

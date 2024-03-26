@@ -309,7 +309,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 1000000
   rigidbody2d: {fileID: 435896752}
   boxCollider: {fileID: 435896751}
   jumpForce: 8
@@ -746,6 +746,7 @@ MonoBehaviour:
   scoreText: {fileID: 1364242252}
   hightScoreText: {fileID: 1904361583}
   retryButton: {fileID: 1268871591}
+  results: []
 --- !u!4 &1284190282
 Transform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,29 @@
+{
+    "DinoJumper": {
+        "checkpoints": [
+            {
+                "steps": 77,
+                "file_path": "results\\Test67\\DinoJumper\\DinoJumper-77.onnx",
+                "reward": -1.0,
+                "creation_time": 1711476933.137934,
+                "auxillary_file_paths": [
+                    "results\\Test67\\DinoJumper\\DinoJumper-77.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 77,
+            "file_path": "results\\Test67\\DinoJumper.onnx",
+            "reward": -1.0,
+            "creation_time": 1711476933.137934,
+            "auxillary_file_paths": [
+                "results\\Test67\\DinoJumper\\DinoJumper-77.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.2.1+cpu"
+    }
+}
